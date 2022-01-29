@@ -1,0 +1,112 @@
+body {
+  background-image: url(images/bg-desktop.svg);
+  color: white;
+  margin: 0;
+  position: relative;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsl(257, 40%, 49%);
+  opacity: 0.7;
+  z-index: -1;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.row,
+.col-logo {
+  margin: 0;
+}
+
+.big-heading,
+.sub-heading,
+.btn {
+  margin: 20px;
+}
+
+.col-heading {
+  padding: 10% 5%;
+}
+/* illustration section */
+
+.illustration-img {
+  width: 100%;
+  padding: 0;
+  padding-right: 0;
+  margin: 20px 0 0 10px;
+}
+
+.logo-img {
+  width: 200px;
+  height: 50px;
+  margin: 20px 0 0 30px;
+}
+
+/* description section */
+
+.big-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.sub-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: hsl(212, 45%, 89%);
+}
+
+.btn {
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 10%;
+}
+
+.btn:hover {
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.footer {
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.social-media {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.social-media:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 500px) {
+  body {
+    text-align: center;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  .footer {
+    text-align: center;
+  }
+  .illustration-img {
+    margin: 10px;
+    justify-content: center;
+  }
+}
